@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --color-gold-50: #fdfcee;
+  --color-gold-100: #f9f5cd;
+  --color-gold-200: #f3eb9d;
+  --color-gold-300: #e8db5b;
+  --color-gold-400: #dfc840;
+  --color-gold-500: #D4AF37; /* Immersive Luxury Gold */
+  --color-gold-600: #B8962E;
+  --color-gold-700: #8f7122;
+  --color-gold-800: #6a531f;
+  --color-gold-900: #49391b;
+  --color-gold-950: #291f0e;
+}
+
+@layer utilities {
+  .gold-gradient {
+    background: linear-gradient(135deg, var(--color-gold-300) 0%, var(--color-gold-500) 50%, var(--color-gold-700) 100%);
+  }
+  .gold-gradient-hover {
+    background: linear-gradient(135deg, var(--color-gold-400) 0%, var(--color-gold-600) 50%, var(--color-gold-800) 100%);
+  }
+  .gold-text-gradient {
+    background: linear-gradient(135deg, #FFF0BE 0%, #D4AF37 50%, #947417 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Evita que o topo da seção fique atrás do Header fixo */
+}
+
+/* Custom scrollbar para manter o tema escuro premium nos navegadores compatíveis */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #1a1a1a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}

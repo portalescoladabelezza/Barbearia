@@ -1,0 +1,6 @@
+{
+  "name": "Barbearia Dom Corte",
+  "description": "Premium, modern model website for Barbearia Dom Corte. Cut, beard, style, and WhatsApp scheduling.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
